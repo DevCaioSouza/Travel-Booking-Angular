@@ -3,27 +3,41 @@
   <div class="background-img">
     <img src="../../../../assets/pousada-luxo.jpg" alt="" />
   </div>
-  <form action="" class="login-form">
+  <form
+    class="login-form"
+    method="POST"
+    #signupForm="ngForm"
+    (ngSubmit)="submitSignup(signupForm.value)"
+    >
     <div class="form-title">
       <h1>Sign up</h1>
     </div>
     <div class="form-input">
       <label for="name">Full Name</label>
-      <input type="text" />
+      <input type="text" name="name" ngModel />
     </div>
     <div class="form-input">
       <label for="email">Email</label>
-      <input type="text" />
+      <input type="text" name="email" ngModel/>
+    </div>
+    <div class="form-input">
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone" ngModel/>
     </div>
     <div class="form-input">
       <label for="password">Password</label>
-      <input type="password" />
+      <input type="password" name="password" ngModel/>
     </div>
     <div class="form-input">
       <label for="password">Confirm Password</label>
-      <input type="password" />
+      <input type="password" name="confirmPassword" ngModel/>
     </div>
-    <input type="submit" value="Sign up" class="btn" />
+
+    <input
+      type="submit"
+      value="Sign up"
+      class="btn"
+    />
     <p class="goto-signup"><a href="/login">Already a user?</a></p>
   </form>
 </div>
