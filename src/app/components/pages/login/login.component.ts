@@ -8,11 +8,10 @@ import {
 } from '@angular/common/http';
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [HeaderComponent, FormsModule, HttpClientModule],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss',
+    selector: 'app-login',
+    imports: [HeaderComponent, FormsModule, HttpClientModule],
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss'
 })
 export class LoginComponent {
   constructor(private http: HttpClient) {}

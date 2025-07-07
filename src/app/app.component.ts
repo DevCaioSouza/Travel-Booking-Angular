@@ -6,11 +6,10 @@ import { ProductsComponent } from './components/pages/products/products.componen
 import { LoginComponent } from './components/pages/login/login.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, ProductsComponent, LoginComponent],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    imports: [CommonModule, RouterOutlet, HeaderComponent, ProductsComponent, LoginComponent],
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'travel-booking';

@@ -6,14 +6,13 @@ import { register } from 'swiper/element/bundle';
 register();
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [HeaderComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ]
+    selector: 'app-home',
+    imports: [HeaderComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss',
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ]
 })
 export class HomeComponent {
 

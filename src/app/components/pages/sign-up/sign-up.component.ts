@@ -7,11 +7,10 @@ import { UserSignup } from '../../../../models/UserSignup'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
-  selector: 'app-sign-up',
-  standalone: true,
-  imports: [HeaderComponent, FormsModule, HttpClientModule],
-  templateUrl: './sign-up.component.html',
-  styleUrl: './sign-up.component.scss',
+    selector: 'app-sign-up',
+    imports: [HeaderComponent, FormsModule, HttpClientModule],
+    templateUrl: './sign-up.component.html',
+    styleUrl: './sign-up.component.scss'
 })
 
 export class SignUpComponent {
